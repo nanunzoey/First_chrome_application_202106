@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="shortcut icon"
+      href="https://cdn3.iconfinder.com/data/icons/summer-189/64/sun_bright_sunlight-512.png"
+    />
+    <link href="css/style.css" rel="stylesheet" />
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap");
+    </style>
+    <title>New Day</title>
+  </head>
+  <body>
+    <div id="info-user">
+      <form id="login-form" class="hidden">
+        <input
+          required
+          maxlength="10"
+          type="text"
+          placeholder="What do I call you?"
+        />
+        <button>Begin</button>
+      </form>
+      <h1 id="greeting" class="hidden"></h1>
+      <div id="weather">
+        <img src="" />
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+    <div id="quote-box">
+      <img
+        src="https://www.pinclipart.com/picdir/big/561-5619745_paper-post-it-note-sticker-sticky-notes-brown.png"
+      />
+      <div id="quote">
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+    <div id="info-todo">
+      <form id="todo-form">
+        <input
+          required
+          type="text"
+          placeholder="What will make you happy today?"
+        />
+      </form>
+      <ul id="todo-list"></ul>
+      <h2 id="clock">00:00:00</h2>
+      <span id="date"></span>
+    </div>
+
+    <script src="js/greetings.js"></script>
+    <script src="js/clock.js"></script>
+    <script src="js/quotes.js"></script>
+    <script src="js/background.js"></script>
+    <script src="js/todo.js"></script>
+    <script src="js/weather.js"></script>
+  </body>
+</html>
