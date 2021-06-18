@@ -1,0 +1,133 @@
+@import "roots.css";
+
+#img-background {
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  right: 0px;
+  top: 0px;
+  z-index: -100;
+  opacity: 0.85;
+}
+
+#info-user {
+  position: relative;
+  margin-right: 30px;
+  width: 21%;
+}
+
+#greeting {
+  font-size: 60px;
+  font-weight: 600;
+}
+
+#weather {
+  position: absolute;
+  bottom: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 25px;
+  font-weight: 200;
+}
+
+#weather span:last-child {
+  font-size: 20px;
+}
+
+#quote-box {
+  position: relative;
+  width: 32%;
+}
+
+#quote {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-size: 18px;
+  font-weight: 500;
+  position: absolute;
+  width: 90%;
+  top: 120px;
+  left: 23px;
+}
+
+#quote-box img {
+  width: 95%;
+  opacity: 0.8;
+}
+
+#quote span:last-child {
+  margin-top: 30px;
+}
+
+#info-todo {
+  position: relative;
+  width: 39%;
+  margin-top: 40px;
+}
+
+#todo-form input {
+  border: none;
+  width: 87%;
+  height: 50px;
+  padding-left: 10px;
+  border-radius: 10px;
+  box-shadow: var(--main-shadow);
+  font-size: 17px;
+}
+
+#todo-form input::placeholder {
+  font-size: 17px;
+  font-style: italic;
+}
+
+#todo-form input:focus {
+  background-color: #e0fdff;
+  color: rgba(0, 0, 0, 0.8);
+}
+
+#todo-list li {
+  font-size: 20px;
+  font-weight: 800;
+  text-shadow: var(--main-shadow);
+}
+
+#todo-list {
+  margin-top: 30px;
+}
+
+#todo-list button {
+  width: 45px;
+  height: 27px;
+  border: none;
+  border-radius: 5px;
+  box-shadow: var(--main-shadow);
+  margin-left: 20px;
+  padding: 3px;
+  font-size: 12px;
+}
+
+#todo-form input:hover,
+#todo-list button:hover {
+  cursor: pointer;
+  box-shadow: 1px 1px 8px rgba(0, 0, 0, 0.4);
+}
+
+#clock {
+  position: absolute;
+  right: 40px;
+  bottom: 0;
+  font-size: 80px;
+  font-weight: 200;
+}
+
+#date {
+  position: absolute;
+  right: 160px;
+  bottom: 40px;
+  font-size: 20px;
+  font-style: italic;
+}
