@@ -49,7 +49,7 @@ const quotes = [
     },
     {
         quote: "불가능, 그것은 사실이 아니라\n하나의 의견일 뿐이다.",
-        author: "이동민"
+        author: "이동민 (Theron Lee)"
     },
     {
         quote: "나는 강한 사람이다.",

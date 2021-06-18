@@ -63,30 +63,51 @@
   margin-top: 30px;
 }
 
+#login-form {
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 40px;
+}
+
 #info-todo {
   position: relative;
   width: 39%;
   margin-top: 40px;
 }
 
+#login-form input,
 #todo-form input {
   border: none;
-  width: 87%;
-  height: 50px;
+  width: 210px;
+  height: 48px;
   padding-left: 10px;
   border-radius: 10px;
   box-shadow: var(--main-shadow);
-  font-size: 17px;
+  font-size: 16px;
 }
 
+#todo-form input {
+  width: 87%;
+}
+
+#login-form input::placeholder,
 #todo-form input::placeholder {
   font-size: 17px;
   font-style: italic;
 }
 
+#login-form input:focus,
 #todo-form input:focus {
   background-color: #e0fdff;
   color: rgba(0, 0, 0, 0.8);
+}
+
+#login-form button {
+  width: 70px;
+  height: 48px;
+  font-size: 17px;
+  border-radius: 10px;
+  margin-left: 7px;
 }
 
 #todo-list li {
@@ -99,17 +120,24 @@
   margin-top: 30px;
 }
 
+#login-form button,
+#todo-list button {
+  border: none;
+  box-shadow: var(--main-shadow);
+  color: rgba(0, 0, 0, 0.8);
+}
+
 #todo-list button {
   width: 45px;
   height: 27px;
-  border: none;
   border-radius: 5px;
-  box-shadow: var(--main-shadow);
   margin-left: 20px;
   padding: 3px;
   font-size: 12px;
 }
 
+#login-form input:hover,
+#login-form button:hover,
 #todo-form input:hover,
 #todo-list button:hover {
   cursor: pointer;
